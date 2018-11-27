@@ -18,13 +18,16 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade" rel="stylesheet">
+
     <!-- Paperscript -->
     <script type="text/paperscript" canvas="canvas">
         var voronoi = new Voronoi();
         var sites = generateBeeHivePoints(view.size / 150, true);
         var bbox, diagram;
         var oldSize = view.size;
-        var spotColor = new Color('grey');
+        var spotColor = new Color('#bfbfbf');
         var mousePos = view.center;
         var selected = false;
 
@@ -140,37 +143,9 @@
             }
         }
     </script>
-    <style>
-        html,
-        body {
-            margin   : 0;
-            overflow : hidden;
-            width: 100%;
-            height   : 100%;
-        }
 
-        canvas[resize] {
-            width  : 100%;
-            height : 100%;
-        }
-
-        #text {
-            /* position text absolutely so it's displayed above the canvas*/
-            position        : absolute;
-            top             : 0;
-            left            : 0;
-            /* center it on the screen */
-            width           : 100vw;
-            height          : 100vh;
-            /* display         : flex;
-            align-items     : center;
-            justify-content : center; */
-            font-size       : 100px;
-            /* make it ignore mouse events */
-            /* pointer-events  : none; */
-            overflow: auto;
-        }
-    </style>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <canvas id="canvas" resize></canvas>
@@ -178,53 +153,76 @@
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6 container">
-                <div id="name">SYED SALIF<br />MOIN</div>
+                <div  id="name" class="row">
+                    <div class="col-md-4">
+                        <img src="assets/icon.png" class="rounded mx-auto d-block profile-image" alt="Profile Image">
+                    </div>
+                    <div class="col-md-8">SYED SALIF MOIN</div>
+                </div>
+                <br />
                 <h1>About</h1>
-                <div style="font-size: 20px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt veritatis, distinctio impedit a sunt assumenda ex blanditiis nostrum reprehenderit obcaecati, iste quod velit dolor officia perspiciatis. Dolores fugit cupiditate inventore.</div>
+                <div class="small-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt veritatis, distinctio impedit a sunt assumenda ex blanditiis nostrum reprehenderit obcaecati, iste quod velit dolor officia perspiciatis. Dolores fugit cupiditate inventore.</div>
                 <br />
             </div>
             <div class="col-md-5 container">
                 <div style="font-size: 0.5em;">
                     <svg height="1000" width="600">
-                        <path d="M 500 000 L 500 800" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 500 150 L 600 150" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 500 250 L 600 250" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 500 350 L 600 350" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 500 450 L 600 450" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 500 550 L 600 550" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 500 650 L 600 650" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 000 L 300 800" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 150 L 550 150" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 250 L 450 250" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 350 L 550 350" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 450 L 450 450" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 550 L 550 550" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 300 650 L 450 650" stroke="black" stroke-width="8" fill="none" />
                         <g stroke="black" stroke-width="10" fill="black">
-                            <!-- <circle cx="500" cy="150" r="10" />
-                            <circle cx="500" cy="250" r="10" />
-                            <circle cx="500" cy="350" r="10" />
-                            <circle cx="500" cy="450" r="10" />
-                            <circle cx="500" cy="550" r="10" />
-                            <circle cx="500" cy="650" r="10" /> -->
-                            <circle cx="500" cy="800" r="20" />
+                            <!-- <circle cx="450" cy="150" r="10" />
+                            <circle cx="300" cy="250" r="10" />
+                            <circle cx="300" cy="350" r="10" />
+                            <circle cx="300" cy="450" r="10" />
+                            <circle cx="300" cy="550" r="10" />
+                            <circle cx="300" cy="650" r="10" /> -->
+                            <circle cx="300" cy="800" r="20" />
                         </g>
                     </svg>
-                    <a href="https://www.github.com/salif-04" target="_black"><i class="fab fa-github-square" style="position: absolute;left:612px;top:125px;color:black;"></i></a>
-                    <a href="https://www.linkedin.com/in/salif-moin-276930132/" target="_black"><i class="fab fa-linkedin" style="position: absolute;left:612px;top:225px;color:black;"></i></a>
-                    <a href="https://stackoverflow.com/users/9787711/syed-salif-moin" target="_black"><i class="fab fa-stack-overflow" style="position: absolute;left:614px;top:313px;color:black;"></i></a>
-                    <a href="https://www.facebook.com/syedsalif.moin" target="_black"><i class="fab fa-facebook" style="position: absolute;left:612px;top:425px;color:black;"></i></a>
-                    <a href="https://www.instagram.com/salif.04/" target="_black"><i class="fab fa-instagram" style="position: absolute;left:612px;top:525px;color:black;"></i></a>
-                    <a href="mailto:syedsalifmoin@gmail.com" target="_black"><i class="fas fa-mail-bulk" style="position: absolute;left:608px;top:632px;color:black;"></i></a>
+                    <a href="https://www.github.com/salif-04" target="_black"><i class="fab fa-github-square" style="position: absolute;left:562px;top:125px;color:black;"></i></a>
+                    <a href="https://www.linkedin.com/in/salif-moin-276930132/" target="_black"><i class="fab fa-linkedin" style="position: absolute;left:462px;top:225px;color:black;"></i></a>
+                    <a href="https://stackoverflow.com/users/9787711/syed-salif-moin" target="_black"><i class="fab fa-stack-overflow" style="position: absolute;left:564px;top:313px;color:black;"></i></a>
+                    <a href="https://www.facebook.com/syedsalif.moin" target="_black"><i class="fab fa-facebook" style="position: absolute;left:462px;top:425px;color:black;"></i></a>
+                    <a href="https://www.instagram.com/salif.04/" target="_black"><i class="fab fa-instagram" style="position: absolute;left:562px;top:525px;color:black;"></i></a>
+                    <a href="mailto:syedsalifmoin@gmail.com" target="_black"><i class="fas fa-mail-bulk" style="position: absolute;left:458px;top:632px;color:black;"></i></a>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div id="experience">
+                    <h1>Experience</h1>
+                </div>
+                <hr />
+                <div id="works">
+                    <h1>Works</h1>
+                </div>
+                <hr />
+                <div id="skills">
+                    <h1>Skills</h1>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
         <div id="contact" class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <form style="font-size: 20px;">
+            <div class="col-md-4 jumbotron">
+                <form class="small-text">
                     <h1>Contact</h1>
                     <div class="form-group">
                         <label for="Name">Name</label>
                         <input type="text" class="form-control" id="forName" placeholder="Your Name">
                     </div>
                     <div class="form-group">
-                        <label for="Email">Email address</label>
+                        <label for="Email">Email</label>
                         <input type="email" class="form-control" id="forEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
                         <label for="Subject">Subject</label>
