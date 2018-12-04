@@ -48,7 +48,7 @@ color           : black;
 #name {
 font-family     : 'Bungee Shade', cursive;
 /* color        : #1af0dc; */
-font-size       : 80px;
+font-size       : 70px;
 margin-top      : 5%;
 }
 .small-text {
@@ -61,4 +61,13 @@ opacity         : 0.8;
 
 .profile-image {
 width           : 100%;
+}
+
+@media only screen and (max-width: 1199px) {
+    #svg-links {
+        display: none;
+    }
+    #name {
+        font-size: 60px;
+    }
 }
