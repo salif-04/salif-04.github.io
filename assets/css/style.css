@@ -71,3 +71,15 @@ width           : 100%;
         font-size: 60px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #svg-sm-links {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #svg-sm-links {
+        display: none;
+    }
+}
