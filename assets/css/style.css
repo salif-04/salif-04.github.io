@@ -48,7 +48,7 @@ color           : black;
 #name {
 font-family     : 'Bungee Shade', cursive;
 /* color        : #1af0dc; */
-font-size       : 70px;
+font-size       : 60px;
 margin-top      : 5%;
 }
 .small-text {
@@ -67,9 +67,9 @@ width           : 100%;
     #svg-links {
         display: none;
     }
-    #name {
+    /* #name {
         font-size: 60px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,5 +81,26 @@ width           : 100%;
 @media only screen and (min-width: 1200px) {
     #svg-sm-links {
         display: none;
+    }
+    #name {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #name {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1644px) {
+    #name {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (min-width: 1844px) {
+    #name {
+        font-size: 65px;
     }
 }

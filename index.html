@@ -21,6 +21,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade" rel="stylesheet">
 
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Paperscript -->
     <script type="text/paperscript" canvas="canvas">
         var voronoi = new Voronoi();
@@ -146,6 +149,13 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- JS -->
+    <script> 
+        $(function() {
+          $("#works-panel").load("projects.html"); 
+        });
+    </script>
 </head>
 <body>
     <canvas id="canvas" resize></canvas>
@@ -194,9 +204,9 @@
                 <div style="font-size: 0.5em;" id="svg-sm-links">
                     <svg height="1000" width="44">
                         <path d="M 022 000 L 022 129" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 022 172 L 022 229" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 022 170 L 022 229" stroke="black" stroke-width="8" fill="none" />
                         <path d="M 022 266 L 022 329" stroke="black" stroke-width="8" fill="none" />
-                        <path d="M 022 372 L 022 429" stroke="black" stroke-width="8" fill="none" />
+                        <path d="M 022 371 L 022 429" stroke="black" stroke-width="8" fill="none" />
                         <path d="M 022 468 L 022 535" stroke="black" stroke-width="8" fill="none" />
                         <path d="M 022 580 L 022 800" stroke="black" stroke-width="8" fill="none" />
                         <g stroke="black" stroke-width="10" fill="black">
@@ -226,6 +236,7 @@
                 <hr />
                 <div id="works">
                     <h1>Works</h1>
+                    <div id="works-panel"></div>
                 </div>
                 <hr />
                 <div id="skills">
