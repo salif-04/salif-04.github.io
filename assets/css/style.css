@@ -26,6 +26,14 @@ background      :black;
 background      : -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#d9d9d9));
 }
 
+li {
+    font-size: 20px;
+}
+
+#experience li {
+    font-size: 15px;
+}
+
 #text {
 /* position text absolutely so it's displayed above the canvas*/
 position        : absolute;
