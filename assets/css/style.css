@@ -28,6 +28,7 @@ background      : -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000),
 
 li {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 #experience li {
@@ -69,6 +70,7 @@ opacity         : 0.8;
 
 .profile-image {
 width           : 100%;
+border-radius: 50%;
 }
 
 @media only screen and (max-width: 1199px) {
