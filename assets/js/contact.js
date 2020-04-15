@@ -13,12 +13,11 @@ $("#submitEmail").click(function(e){
         from_email: $('#forEmail').val(),
         subject: $('#forSubject').val(),
         message_html: $('#forMessage').val(),
-        address: $('#forAddress').val(),
         phone: $('#forPhone').val()
     };
 
     // Check for any unfilled input field
-    if (!(data.from_name && data.from_email && data.subject && data.message_html && data.address && data.phone)) {
+    if (!(data.from_name && data.from_email && data.subject && data.message_html && data.phone)) {
         display('Incomplete Form', 'Please Fill the Complete Form');
     }
     else {
