@@ -31,7 +31,7 @@ li {
     margin-bottom: 20px;
 }
 
-#experience li {
+#experience li, #skills li {
     font-size: 15px;
 }
 
